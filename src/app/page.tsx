@@ -72,7 +72,7 @@ export default function SkyCastPage() {
         <p className="text-xl text-muted-foreground">Your reliable weather companion</p>
       </header>
 
-      <div className="w-full max-w-xl mb-8">
+      <div className="w-full max-w-xl mb-8 flex justify-center">
         <SearchBar onSearch={handleSearch} initialCity={city} isLoading={loading} />
       </div>
 
