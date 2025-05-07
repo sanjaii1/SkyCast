@@ -1,7 +1,8 @@
+import * as React from 'react';
 import type { DailyForecast } from '@/services/weather';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { WeatherIcon, Thermometer, CalendarDays } from './WeatherIcon';
-import { format, addDays, parseISO } from 'date-fns';
+import { format, addDays } from 'date-fns';
 
 interface ForecastItemProps {
   forecast: DailyForecast;
