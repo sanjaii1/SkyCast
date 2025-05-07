@@ -10,9 +10,8 @@ interface ForecastItemProps {
 }
 
 const ForecastItem: React.FC<ForecastItemProps> = ({ forecast, dayOffset }) => {
-  // For mock data, we don't have a date. Let's simulate it.
-  // In a real scenario, the API would provide the date.
   const [currentDate, setCurrentDate] = React.useState<Date | null>(null);
+  
   React.useEffect(() => {
     setCurrentDate(addDays(new Date(), dayOffset));
   }, [dayOffset]);

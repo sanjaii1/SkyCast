@@ -43,7 +43,7 @@ const CurrentWeatherCard: React.FC<CurrentWeatherCardProps> = ({ weather, city }
             <p className="text-xl font-semibold">{weather.windSpeedKph} kph</p>
           </div>
         </div>
-        <div className="flex items-center space-x-2 p-3 bg-secondary/50 rounded-lg col-span-1 sm:col-span-2">
+        <div className="flex items-center space-x-2 p-3 bg-secondary/50 rounded-lg col-span-1">
            <WeatherIcon description={weather.description} className="h-6 w-6 text-primary" />
           <div>
             <p className="text-sm text-muted-foreground">Condition</p>
